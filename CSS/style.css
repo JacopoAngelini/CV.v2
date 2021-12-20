@@ -1,13 +1,8 @@
-body {
+ body {
   background-color: #FAF2DA;
 }
 
-.up {
-  background-color: #F9E0AE;
-}
-
 div {
-  margin: 0;
   padding-top: 5px;
 }
 
@@ -16,29 +11,16 @@ body {
   text-align: center;
 }
 
-img {
-  height: 250px;
-  width: 250px;
-}
-
 hr {
-  background-color: #682C0E;
-  border: solid #682C0E 1px;
-  width: 90%;
-}
-
-.heading {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #C24914;
-  font-family: 'Island Moments', cursive;
-  font-size: 80px;
+ border-top: 6px dotted #682C0E;
+ width: 50px;
+ background-color: inherit;
 }
 
 h2 {
   font-family: 'Amatic SC', cursive;
   color: #FC8621;
-  font-size: 1.8em;
+  font-size: 2rem;
 }
 
 h3 {
@@ -49,26 +31,50 @@ h3 {
 
 p {
   color: #682C0E;
-  margin-bottom: 50px;
   font-family: sans-serif;
   font-size: 15px;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-bottom: 10px;
+  line-height: 2;
 }
 
-/* immagini div top */
+/* stile div top */
+.up {
+  background-color: #F9E0AE;
+  position: relative;
+  padding-top: 3px;
+}
+
+.heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #C24914;
+  font-family: 'Island Moments', cursive;
+  font-size: 5.5rem;
+}
+
+.sotto-heading {
+  margin: 0 auto 20px auto;
+  font-weight: normal;
+  /* serve per de-enfatizzare il carattere delle intestazione. font-weight stabilisce lo spessore del carattere, con normal ha larghezza da testo normale */
+}
+
 .cloud-top {
-  height: 100px;
-  width: 100px;
-  margin-left: 300px;
+  height: 90px;
+  width: 90px;
+  margin-left: 320px;
+}
+
+.divcloud-bottom {
+  left: 380px;
+  bottom: 280px;
 }
 
 .cloud-bottom {
   height: 100px;
   width: 100px;
-  position: absolute;
-  left: 380px;
+  left: 360px;
   bottom: 280px;
+  position: absolute;
 }
 
 .LaVolpe {
@@ -80,58 +86,107 @@ p {
 /* stile div middle */
 .middle {
   background-color: #FAF2DA;
+  margin-bottom: 2%;
+}
+
+.profile {
+  text-align: right;
+  margin-right: 250px;
+  margin-bottom: 120px;
+  margin-top: 60px;
+}
+
+.fotoprofile {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.skills {
+  text-align: left;
+  margin-left: 250px;
+  padding-bottom: 28px;
+}
+
+.skill-row {
+  margin-bottom: 8%;
+}
+
+.testo {
+  margin-right: 18.75rem
 }
 
 .firma {
   color: #C24914;
   font-family: 'Island Moments', cursive;
-  font-size: 60px;
+  font-size: 6.5rem;
 }
 
 .web {
-  height: 200px;
-  width: 200px;
-  padding: 25px;
+  width: 18%;
+  float: left;
+  margin-right: 30px;
 }
 
-.webdiv {
-  width: 250px;
-  height: 250px;
-  border-radius: 125px;
-  background-color: white;
-  display: inline-block;
-  padding-top: 0px;
+.mobile {
+  width: 18%;
+  float: right;
+  margin-left: 30px;
+  margin-right: 250px;
 }
 
-.mobile{
-  width: 200px;
-  height: 200px;
-  padding: 25px;
+.testomobile {
+  text-align: right;
 }
 
-.mobilediv{
-  width: 250px;
-  height: 250px;
-  border-radius: 125px;
-  background-color: white;
-  display: inline-block;
-  padding-top: 0px;
+.contact-me {
+  text-align: center;
 }
 
 /* stile div bottom */
 .bottom {
-  background-color: #FAF2DA;
+  height: 150px;
+  background-color: #F9E0AE;
+  margin-top: 50px;
+  margin-bottom: 0;
 }
-.btn{
+
+.h2contattami {
+  font-size: 3rem;
+}
+
+.divlink {
+  margin-top: 40px;
+
+}
+
+.linkfondo{
+  width: 80px;
+  display: inline-block;
   text-decoration: none;
   color: #682C0E;
-  font-size: 25px;
+  font-weight: bolder;
 }
-.button{
-    background-color: white;
-    border: 2px solid #682C0E;
-    border-radius: 12px;
+
+.btn {
+  background: #FAF2DA;
+  background-image: -webkit-linear-gradient(top, #FAF2DA, #F9E0AE);
+  background-image: -moz-linear-gradient(top, #FAF2DA, #F9E0AE);
+  background-image: -ms-linear-gradient(top, #FAF2DA, #F9E0AE);
+  background-image: -o-linear-gradient(top, #FAF2DA, #F9E0AE);
+  background-image: linear-gradient(to bottom, #FAF2DA, #F9E0AE);
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 13px;
+  font-family: Arial;
+  color: #C24914;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: solid #C24914 1px;
 }
-.button:hover{
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+.btn:hover {
+  background: #F9E0AE;
+  text-decoration: none;
 }
